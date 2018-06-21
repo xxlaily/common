@@ -81,4 +81,22 @@ public class Constants {
         public final static Integer success = 1;//支付成功
         public final static Integer cancel = 2;//支付超时
     }
+
+    public static final String USER_TOKEN_PREFIX = "userToken:";
+
+    //文件服务器前缀
+    public static final String FILE_PRE="http://192.168.9.151:8888/";
+
+    public static final String DEFAULT_USER="default_user.jpg";
+
+    public static final String DEFAULT_NORMAL="default_normal.jpg";
+
+    public static final String DEFAULT_CAROUSEL="default_carousel.jpg";
+
+    public static final String DEFAULT_POSTER="default_poster.png";
+
+    public static final Integer DEFAULT_PAGE_NO =2;
+
+    public static final Integer DEFAULT_PAGE_SIZE =10;
+
 }

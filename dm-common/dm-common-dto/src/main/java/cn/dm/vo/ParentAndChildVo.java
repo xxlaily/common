@@ -4,8 +4,8 @@ package cn.dm.vo;
  * 亲子页猜你喜欢
  */
 public class ParentAndChildVo {
-    //商品分类主键
-    private Long itemTypeId;
+    //商品主键
+    private Long id;
     //节目名称
     private String itemName;
     //城市
@@ -23,12 +23,12 @@ public class ParentAndChildVo {
     //最低价格
     private Double minPrice;
 
-    public Long getItemTypeId() {
-        return itemTypeId;
+    public Long getId() {
+        return id;
     }
 
-    public void setItemTypeId(Long itemTypeId) {
-        this.itemTypeId = itemTypeId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getItemName() {

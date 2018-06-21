@@ -39,7 +39,6 @@ public class ValidateInterceptor implements HandlerInterceptor {
      */
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
-        response.setHeader("Content-type", "text/html;charset=UTF-8");
         PrintUtil print = new PrintUtil(response);
         Dto dto =null;
         logger.info(request.getRequestURI() + ">>>>>>");
@@ -47,7 +46,7 @@ public class ValidateInterceptor implements HandlerInterceptor {
         //拦截异常信息
         if (EmptyUtils.isNotEmpty(ex)) {
             response.setCharacterEncoding("UTF-8");
-            response.setContentType("application/json; charset=utf-8");
+            response.setContentType("text/html; charset=utf-8");
             try {
                 if (ex instanceof BaseException) {
                     BaseException se = (BaseException) ex;
@@ -55,7 +54,8 @@ public class ValidateInterceptor implements HandlerInterceptor {
                 } else {
                     dto= DtoUtil.returnFail(ErrorCode.COMMON_Exception.getErrorMessage(),ErrorCode.COMMON_Exception.getErrorCode());
                 }
-                print.print(JSONObject.toJSONString(dto));
+                String msg=JSONObject.toJSONString(dto);
+                print.print(msg);
             } catch (Exception e) {
                 if (!(ex instanceof BaseException)) {
                     e.printStackTrace();

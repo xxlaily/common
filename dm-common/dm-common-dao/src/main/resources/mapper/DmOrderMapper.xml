@@ -341,6 +341,9 @@
             <if test="orderTime != null and orderTime == 2">
                 and createdTime >= DATE_ADD(NOW(), INTERVAL - 3 MONTH)
             </if>
+            <if test="userId != null">
+                and userId=#{userId}
+            </if>
             <if test="orderType != null">
                 and orderType=#{orderType}
             </if>

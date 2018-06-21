@@ -15,6 +15,8 @@ public class DmScheduler implements Serializable {
     private Date endTime;
     //剧集Id
     private Long itemId;
+    //剧场id
+    private Long cinemaId;
     //创建时间
     private Date createdTime;
     //更新时间
@@ -61,5 +63,13 @@ public class DmScheduler implements Serializable {
     }
     public  Date getUpdatedTime(){
         return this.updatedTime;
+    }
+
+    public Long getCinemaId() {
+        return cinemaId;
+    }
+
+    public void setCinemaId(Long cinemaId) {
+        this.cinemaId = cinemaId;
     }
 }

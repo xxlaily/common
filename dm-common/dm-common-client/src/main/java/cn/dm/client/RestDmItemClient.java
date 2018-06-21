@@ -1,4 +1,5 @@
 package cn.dm.client;
+import cn.dm.common.Page;
 import cn.dm.fallback.DmItemClientFallBack;
 import cn.dm.pojo.DmItem;
 
@@ -41,5 +42,12 @@ public interface RestDmItemClient {
     public List<DmFloorItems> queryItemByFloor()throws Exception;
 
     @RequestMapping(value = "/queryItemByMonth",method = RequestMethod.POST)
-    public List<DmItem> queryItemByMonth(@RequestParam("month") Integer month,@RequestParam("year") Integer year)throws Exception;
+    public List<DmItem> queryItemByMonth(@RequestParam Map<String, Object> param)throws Exception;
+
+    @RequestMapping(value = "/getDmItemListByMapForEs",method = RequestMethod.POST)
+    public List<DmItem> getDmItemListByMapForEs(@RequestParam Map<String, Object> param) throws Exception;
+
+    @RequestMapping(value = "/queryDmItemPage",method = RequestMethod.POST)
+    public Page<DmItem> queryDmItemPage(@RequestParam  Map<String, Object> param) throws Exception;
+
 }

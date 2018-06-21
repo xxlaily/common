@@ -14,7 +14,7 @@
     <select id="queryDmItemTypeByParent" parameterType="long" resultType="cn.dm.vo.DmItemTypeVo">
       SELECT
             d1.id AS id,
-            d1.itemName AS itemName,
+            d1.itemType AS itemType,
             d1.LEVEL AS LEVEL,
             d1.parent AS parent,
             d1.aliasName AS aliasName
@@ -55,7 +55,7 @@
     <select id="selectTestChildren" resultMap="dmItemTypeVo">
         SELECT
             d1.id AS id,
-            d1.itemName AS itemName,
+            d1.itemType AS itemType,
             d1.LEVEL AS LEVEL,
             d1.parent AS parent,
             d1.aliasName AS aliasName
@@ -67,7 +67,7 @@
     <select id="getDmItemTypeById" resultType="cn.dm.pojo.DmItemType">
         select
                 id as id,
-                itemName as itemName,
+                itemType as itemType,
                 level as level,
                 parent as parent,
                 aliasName as aliasName,
@@ -84,7 +84,7 @@
     <select id="getDmItemTypeListByMap" resultType="cn.dm.pojo.DmItemType" parameterType="java.util.Map">
         select
                 id as id,
-                itemName as itemName,
+                itemType as itemType,
                 level as level,
                 parent as parent,
                 aliasName as aliasName,
@@ -95,13 +95,13 @@
                 <if test="id != null and id!=''">
                     and id=#{id}
                 </if>
-                <if test="itemName != null and itemName!=''">
-                    and itemName=#{itemName}
+                <if test="itemType != null and itemType!=''">
+                    and itemType=#{itemType}
                 </if>
                 <if test="level != null and level!=''">
                     and level=#{level}
                 </if>
-                <if test="parent != null and parent!=''">
+                <if test="parent != null">
                     and parent=#{parent}
                 </if>
                 <if test="aliasName != null and aliasName!=''">
@@ -128,8 +128,8 @@
                 <if test="id != null and id!=''">
                     and id=#{id}
                 </if>
-                <if test="itemName != null and itemName!=''">
-                    and itemName=#{itemName}
+                <if test="itemType != null and itemType!=''">
+                    and itemType=#{itemType}
                 </if>
                 <if test="level != null and level!=''">
                     and level=#{level}
@@ -154,7 +154,7 @@
 
     <insert id="insertDmItemType" parameterType="cn.dm.pojo.DmItemType">
         insert into dm_item_type(
-                        itemName,
+                        itemType,
                         level,
                         parent,
                         aliasName,
@@ -162,7 +162,7 @@
                         createdTime,
                         updatedTime)
         values(
-                     #{itemName},
+                     #{itemType},
                      #{level},
                      #{parent},
                      #{aliasName},
@@ -174,8 +174,8 @@
     <update id="updateDmItemType" parameterType="cn.dm.pojo.DmItemType">
         update dm_item_type
         <trim prefix="set" suffixOverrides="," suffix="where id=#{id}">
-                        <if test="itemName != null and itemName!=''">
-                            itemName=#{itemName},
+                        <if test="itemType != null and itemType!=''">
+                            itemType=#{itemType},
                         </if>
                         <if test="level != null and level!=''">
                             level=#{level},

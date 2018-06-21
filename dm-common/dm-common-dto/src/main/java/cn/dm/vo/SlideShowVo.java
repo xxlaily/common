@@ -4,8 +4,8 @@ package cn.dm.vo;
  * 亲子页轮播图
  */
 public class SlideShowVo {
-    //商品分类主键
-    private Long itemTypeId;
+    //商品主键
+    private Long id;
     //节目名称
     private String itemName;
     //最低价格
@@ -13,12 +13,12 @@ public class SlideShowVo {
     //热门节目宣传照片
     private String imgUrl;
 
-    public Long getItemTypeId() {
-        return itemTypeId;
+    public Long getId() {
+        return id;
     }
 
-    public void setItemTypeId(Long itemTypeId) {
-        this.itemTypeId = itemTypeId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getItemName() {

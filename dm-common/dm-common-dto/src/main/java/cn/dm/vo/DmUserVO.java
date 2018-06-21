@@ -39,14 +39,7 @@ public class DmUserVO implements Serializable {
     private Long imageId;
     // 图片URL
     private String imgUrl;
-/*
-    // token
-    private String token;
-    // 有效时长
-    private long extTime;
-    // 当前时间
-    private Date genTime;*/
-    //get set 方法
+
     public void setUserId (Long  userId){
         this.userId=userId;
     }

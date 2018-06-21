@@ -29,4 +29,5 @@ public interface DmSchedulerSeatMapper {
                                                      @Param(value = "x") Integer x,
                                                      @Param(value = "y") Integer y) throws Exception;
 
+    public List<String> queryCinemaSeatArray(Map<String, Object> params) throws Exception;
 }

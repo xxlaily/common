@@ -11,6 +11,7 @@
                 startTime as startTime,
                 endTime as endTime,
                 itemId as itemId,
+                cinemaId as cinemaId,
                 createdTime as createdTime,
                 updatedTime as updatedTime
         from dm_scheduler
@@ -28,6 +29,7 @@
                 startTime as startTime,
                 endTime as endTime,
                 itemId as itemId,
+                cinemaId as cinemaId,
                 createdTime as createdTime,
                 updatedTime as updatedTime
         from dm_scheduler

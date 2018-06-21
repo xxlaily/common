@@ -7,15 +7,15 @@ import java.util.List;
  */
 public class MonthVo {
     //当前日期（天）
-    private Integer day;
+    private String day;
     //当前日期的节目列表
     private List<ParentAndChildVo> itemList;
 
-    public Integer getDay() {
+    public String getDay() {
         return day;
     }
 
-    public void setDay(Integer day) {
+    public void setDay(String day) {
         this.day = day;
     }
 

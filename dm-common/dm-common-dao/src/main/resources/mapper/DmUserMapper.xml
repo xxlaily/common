@@ -189,7 +189,7 @@
                         <if test="nickName != null and nickName!=''">
                             nickName=#{nickName},
                         </if>
-                        <if test="sex != null and sex!=''">
+                        <if test="sex != null">
                             sex=#{sex},
                         </if>
                         <if test="idCard != null and idCard!=''">

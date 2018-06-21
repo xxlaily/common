@@ -8,7 +8,7 @@ public class DmItemType implements Serializable {
     //主键
     private Long id;
     //类型名称
-    private String itemName;
+    private String itemType;
     //分类级别;select;(1:1级,2:2级)
     private String level;
     //父级类型
@@ -28,12 +28,15 @@ public class DmItemType implements Serializable {
     public  Long getId(){
         return this.id;
     }
-    public void setItemName (String  itemName){
-        this.itemName=itemName;
+
+    public String getItemType() {
+        return itemType;
     }
-    public  String getItemName(){
-        return this.itemName;
+
+    public void setItemType(String itemType) {
+        this.itemType = itemType;
     }
+
     public void setLevel (String  level){
         this.level=level;
     }

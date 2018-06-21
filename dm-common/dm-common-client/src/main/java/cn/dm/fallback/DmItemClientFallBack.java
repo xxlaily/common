@@ -1,10 +1,14 @@
 package cn.dm.fallback;
 
+import cn.dm.common.Page;
 import cn.dm.pojo.DmItem;
 
 import cn.dm.client.RestDmItemClient;
 import cn.dm.vo.DmFloorItems;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+
 import java.util.List;
 import java.util.Map;
 
@@ -48,7 +52,18 @@ public class DmItemClientFallBack implements RestDmItemClient {
     }
 
     @Override
-    public List<DmItem> queryItemByMonth(Integer month, Integer year) throws Exception {
+    public List<DmItem> queryItemByMonth(Map<String, Object> param) throws Exception {
         return null;
     }
+
+    @Override
+    public List<DmItem> getDmItemListByMapForEs(@RequestParam Map<String, Object> param) throws Exception{
+        return null;
+    }
+
+    @Override
+    public Page<DmItem> queryDmItemPage(@RequestParam  Map<String, Object> param) throws Exception {
+        return null;
+    }
+
 }

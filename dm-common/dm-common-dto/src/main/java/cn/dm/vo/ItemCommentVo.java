@@ -13,6 +13,9 @@ public class ItemCommentVo {
     //评论用户ID
     private Long userId;
 
+    //评论用户名称
+    private String userName;
+
     //用户头像
     private String imgUrl;
 
@@ -39,6 +42,14 @@ public class ItemCommentVo {
 
     public void setUserId(Long userId) {
         this.userId = userId;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getImgUrl() {

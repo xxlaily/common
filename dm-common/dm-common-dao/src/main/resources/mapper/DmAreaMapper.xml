@@ -39,7 +39,7 @@
                 <if test="parent != null and parent!=''">
                     and parent=#{parent}
                 </if>
-                <if test="level != null and level!=''">
+                <if test="level != null">
                     and level=#{level}
                 </if>
                 <if test="createdTime != null and createdTime!=''">
