@@ -3,7 +3,7 @@ package cn.dm.common;
 public class Constants {
 
     //异常码定义
-    public static class ErrorCode{
+    public static class ErrorCode {
         //通用状态码 00**
         public static class CommonCode {
             public static String SUCCESS = "0000";
@@ -12,20 +12,21 @@ public class Constants {
         }
     }
 
-    public static class Image{
+    public static class Image {
         //0:无类型 1:轮播图 2:海报图
-        public static class ImageType{
+        public static class ImageType {
             //无类型
-            public static Integer normal=0;
+            public static Integer normal = 0;
             //轮播图
-            public static Integer carousel=1;
+            public static Integer carousel = 1;
             //海报图
-            public static Integer poster=2;
+            public static Integer poster = 2;
         }
+
         //图片分类
-        public static class ImageCategory{
-            public static Integer user=0; //用户模块
-            public static Integer item=1; //商品模块
+        public static class ImageCategory {
+            public static Integer user = 0; //用户模块
+            public static Integer item = 1; //商品模块
         }
     }
 
@@ -41,6 +42,17 @@ public class Constants {
         public final static Integer TOPAY = 0;//待支付
         public static final Integer SUCCESS = 1;//支付成功
         public final static Integer FAIL = 2;//支付失败
+        public final static Integer ISNEEDINSURANCE_NO = 0;//不需要保险
+        public final static Integer ISNEEDINSURANCE_YES = 1;//需要保险
+        public final static Double NEEDINSURANCE_MONEY = 20.0;//保险金额
+    }
+
+    /**
+     * 座位表状态常量
+     */
+    public static class SchedulerSeatStatus {
+        public final static Integer SchedulerSeat_TOPAY = 2;//锁定待付款
+        public static final Integer SchedulerSeat_PAYSUCCESS = 3;//支付成功
     }
 
     public static class QueueName {
@@ -85,18 +97,18 @@ public class Constants {
     public static final String USER_TOKEN_PREFIX = "userToken:";
 
     //文件服务器前缀
-    public static final String FILE_PRE="http://192.168.9.151:8888/";
+    public static final String FILE_PRE = "http://192.168.9.151:8888/";
 
-    public static final String DEFAULT_USER="default_user.jpg";
+    public static final String DEFAULT_USER = "default_user.jpg";
 
-    public static final String DEFAULT_NORMAL="default_normal.jpg";
+    public static final String DEFAULT_NORMAL = "default_normal.jpg";
 
-    public static final String DEFAULT_CAROUSEL="default_carousel.jpg";
+    public static final String DEFAULT_CAROUSEL = "default_carousel.jpg";
 
-    public static final String DEFAULT_POSTER="default_poster.png";
+    public static final String DEFAULT_POSTER = "default_poster.png";
 
-    public static final Integer DEFAULT_PAGE_NO =2;
+    public static final Integer DEFAULT_PAGE_NO = 2;
 
-    public static final Integer DEFAULT_PAGE_SIZE =10;
+    public static final Integer DEFAULT_PAGE_SIZE = 10;
 
 }
