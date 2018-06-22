@@ -17,6 +17,8 @@ public class DmSchedulerSeat implements Serializable {
     private Long scheduleId;
     //如果已经售出记录购买用户id
     private Long userId;
+    //订单Id
+    private Long orderId;
     //座位状态(0:没座位 1:有座位 2:锁定待付款 3:已售出 )
     private Integer status;
     //排序
@@ -85,5 +87,13 @@ public class DmSchedulerSeat implements Serializable {
     }
     public  Date getUpdatedTime(){
         return this.updatedTime;
+    }
+
+    public Long getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(Long orderId) {
+        this.orderId = orderId;
     }
 }
