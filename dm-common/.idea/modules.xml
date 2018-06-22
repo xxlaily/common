@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dm-common.iml" filepath="$PROJECT_DIR$/dm-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-common-client/dm-common-client.iml" filepath="$PROJECT_DIR$/dm-common-client/dm-common-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-common-dao/dm-common-dao.iml" filepath="$PROJECT_DIR$/dm-common-dao/dm-common-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-common-dto/dm-common-dto.iml" filepath="$PROJECT_DIR$/dm-common-dto/dm-common-dto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-common-ext-utils/dm-common-ext-utils.iml" filepath="$PROJECT_DIR$/dm-common-ext-utils/dm-common-ext-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-common-module/dm-common-module.iml" filepath="$PROJECT_DIR$/dm-common-module/dm-common-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-common-utils/dm-common-utils.iml" filepath="$PROJECT_DIR$/dm-common-utils/dm-common-utils.iml" />
+    </modules>
+  </component>
+</project>
