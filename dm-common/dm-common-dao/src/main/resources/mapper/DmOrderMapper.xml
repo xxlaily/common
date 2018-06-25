@@ -198,7 +198,7 @@
         </trim>
     </select>
 
-    <insert id="insertDmOrder" parameterType="cn.dm.pojo.DmOrder">
+    <insert id="insertDmOrder" keyProperty="id" useGeneratedKeys="true" parameterType="cn.dm.pojo.DmOrder">
         insert into dm_order(
                         orderNo,
                         userId,
