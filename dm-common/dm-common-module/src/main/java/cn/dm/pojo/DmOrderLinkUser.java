@@ -16,6 +16,8 @@ public class DmOrderLinkUser implements Serializable {
     //座位位置
     private Integer x;
     private Integer y;
+    //座位价格
+    private Double price;
     //入住人姓名逗号分隔
     private String linkUserName;
     //
@@ -62,6 +64,14 @@ public class DmOrderLinkUser implements Serializable {
 
     public void setY(Integer y) {
         this.y = y;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 
     public void setLinkUserName(String linkUserName) {
