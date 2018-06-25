@@ -39,4 +39,9 @@ public class DmOrderClientFallBack implements RestDmOrderClient {
     public List<DmOrder> getDmOrderListByOrderNoOrDate(Map<String, Object> param) throws Exception {
         return null;
     }
+
+    @Override
+    public DmOrder getDmOrderByOrderNo(String orderNo) throws Exception {
+        return null;
+    }
 }

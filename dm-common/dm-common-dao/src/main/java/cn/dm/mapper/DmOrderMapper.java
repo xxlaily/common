@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Mapper
 public interface DmOrderMapper {
@@ -27,4 +28,5 @@ public interface DmOrderMapper {
 
     public List<DmOrder> getDmOrderListByOrderNoOrDate(Map<String, Object> param);
 
+    public DmOrder getDmOrderByOrderNo(@Param(value = "orderNo") String orderNo);
 }

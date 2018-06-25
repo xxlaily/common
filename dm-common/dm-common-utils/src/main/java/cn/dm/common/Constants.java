@@ -40,8 +40,8 @@ public class Constants {
 
     public static class OrderStatus {
         public final static Integer TOPAY = 0;//待支付
-        public static final Integer SUCCESS = 1;//支付成功
-        public final static Integer FAIL = 2;//支付失败
+        public static final Integer SUCCESS = 2;//支付成功
+        public final static Integer FAIL = -1;//支付失败
         public final static Integer ISNEEDINSURANCE_NO = 0;//不需要保险
         public final static Integer ISNEEDINSURANCE_YES = 1;//需要保险
         public final static Double NEEDINSURANCE_MONEY = 20.0;//保险金额
