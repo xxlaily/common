@@ -360,7 +360,7 @@
     </select>
 
     <update id="flushCancelOrderType">
-        update dm_order set orderType=1 where orderType=-1 and timestampdiff(SECOND, createdTime, NOW()) >= 2 * 3600
+        update dm_order set orderType=-1 where orderType=0 and timestampdiff(SECOND, createdTime, NOW()) >= 2 * 3600
     </update>
 
     <select id="getDmOrderByOrderTypeAndTime" resultType="cn.dm.pojo.DmOrder">
