@@ -26,7 +26,7 @@ public class DmOrderClientFallBack implements RestDmOrderClient {
     }
 
     @Override
-    public Integer qdtxAddDmOrder(DmOrder dmOrder)throws Exception{
+    public Long qdtxAddDmOrder(DmOrder dmOrder)throws Exception{
         return null;
     }
 
