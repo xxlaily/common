@@ -58,6 +58,9 @@
             <if test="scheduleId != null and scheduleId!=''">
                 and scheduleId=#{scheduleId}
             </if>
+            <if test="orderNo != null and orderNo!=''">
+                and orderNo=#{orderNo}
+            </if>
             <if test="userId != null and userId!=''">
                 and userId=#{userId}
             </if>
