@@ -44,4 +44,14 @@ public class DmOrderClientFallBack implements RestDmOrderClient {
     public DmOrder getDmOrderByOrderNo(String orderNo) throws Exception {
         return null;
     }
+
+    @Override
+    public boolean flushCancelOrderType() throws Exception {
+        return false;
+    }
+
+    @Override
+    public List<DmOrder> getDmOrderByOrderTypeAndTime() throws Exception {
+        return null;
+    }
 }
