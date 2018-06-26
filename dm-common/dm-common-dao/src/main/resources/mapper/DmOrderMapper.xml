@@ -35,6 +35,37 @@
         </trim>
     </select>
 
+    <select id="getDmOrderByOrderNo" resultType="cn.dm.pojo.DmOrder">
+        select
+        id as id,
+        orderNo as orderNo,
+        userId as userId,
+        schedulerId as schedulerId,
+        itemId as itemId,
+        itemName as itemName,
+        wxTradeNo as wxTradeNo,
+        aliTradeNo as aliTradeNo,
+        orderType as orderType,
+        payType as payType,
+        totalCount as totalCount,
+        sourceType as sourceType,
+        isNeedInvoice as isNeedInvoice,
+        invoiceType as invoiceType,
+        invoiceHead as invoiceHead,
+        invoiceNo as invoiceNo,
+        isNeedInsurance as isNeedInsurance,
+        totalAmount as totalAmount,
+        insuranceAmount as insuranceAmount,
+        createdTime as createdTime,
+        updatedTime as updatedTime
+        from dm_order
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="orderNo != null">
+                and orderNo=#{orderNo}
+            </if>
+        </trim>
+    </select>
+
     <select id="getDmOrderListByMap" resultType="cn.dm.pojo.DmOrder" parameterType="java.util.Map">
         select
         id as id,

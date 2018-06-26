@@ -31,4 +31,6 @@ public interface DmOrderMapper {
     public Integer flushCancelOrderType() throws Exception;
 
     public List<DmOrder> getDmOrderByOrderTypeAndTime() throws Exception;
+
+    public DmOrder getDmOrderByOrderNo(@Param(value = "orderNo") String orderNo) throws Exception;
 }
