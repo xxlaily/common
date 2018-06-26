@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9d20e25-4fb2-4374-bf75-644f0ba626e5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-ext-utils/target/classes/cn/dm/common/RabbitMQUtils.class" afterPath="$PROJECT_DIR$/dm-common-ext-utils/target/classes/cn/dm/common/RabbitMQUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-ext-utils/target/dm-common-ext-utils-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/dm-common-ext-utils/target/dm-common-ext-utils-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants$OrderStatus.class" afterPath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants$OrderStatus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants$QgStatus.class" afterPath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants$QgStatus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants$QueueName.class" afterPath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants$QueueName.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants$RabbitQueueName.class" afterPath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants$RabbitQueueName.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants$StockStatus.class" afterPath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants$StockStatus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants$WxpayStatus.class" afterPath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants$WxpayStatus.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants.class" afterPath="$PROJECT_DIR$/dm-common-utils/target/classes/cn/dm/common/Constants.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-utils/target/dm-common-utils-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/dm-common-utils/target/dm-common-utils-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/client/RestDmOrderClient.java" afterPath="$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/client/RestDmOrderClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/client/RestDmOrderLinkUserClient.java" afterPath="$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/client/RestDmOrderLinkUserClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/fallback/DmOrderClientFallBack.java" afterPath="$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/fallback/DmOrderClientFallBack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/mapper/DmOrderMapper.java" afterPath="$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/mapper/DmOrderMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/fallback/DmOrderLinkUserClientFallBack.java" afterPath="$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/fallback/DmOrderLinkUserClientFallBack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/mapper/DmOrderLinkUserMapper.java" afterPath="$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/mapper/DmOrderLinkUserMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmOrderLinkUserMapper.xml" afterPath="$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmOrderLinkUserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmOrderMapper.xml" afterPath="$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmOrderMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmSchedulerSeatMapper.xml" afterPath="$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmSchedulerSeatMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-ext-utils/src/main/java/cn/dm/common/RabbitMQUtils.java" afterPath="$PROJECT_DIR$/dm-common-ext-utils/src/main/java/cn/dm/common/RabbitMQUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-module/src/main/java/cn/dm/pojo/DmOrder.java" afterPath="$PROJECT_DIR$/dm-common-module/src/main/java/cn/dm/pojo/DmOrder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dm-common-utils/src/main/java/cn/dm/common/Constants.java" afterPath="$PROJECT_DIR$/dm-common-utils/src/main/java/cn/dm/common/Constants.java" />
     </list>
     <ignored path="$PROJECT_DIR$/dm-common-dto/target/" />
@@ -25,56 +39,39 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="RabbitMQUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dm-common-ext-utils/src/main/java/cn/dm/common/RabbitMQUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+            <state relative-caret-position="371">
+              <caret line="66" column="73" lean-forward="false" selection-start-line="66" selection-start-column="73" selection-end-line="66" selection-end-column="73" />
               <folding>
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#813#814#0" expanded="true" />
+                <element signature="e#1560#1561#0" expanded="true" />
+                <element signature="e#1642#1643#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DmOrder.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dm-common-module/src/main/java/cn/dm/pojo/DmOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dm-common-utils/src/main/java/cn/dm/common/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DmOrderMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/mapper/DmOrderMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="30" column="80" lean-forward="false" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestDmOrderClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/client/RestDmOrderClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="40" column="97" lean-forward="false" selection-start-line="40" selection-start-column="97" selection-end-line="40" selection-end-column="97" />
+            <state relative-caret-position="362">
+              <caret line="77" column="49" lean-forward="false" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -89,6 +86,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>deleteDmOrderById</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -102,15 +104,19 @@
       <list>
         <option value="$PROJECT_DIR$/dm-common-utils/src/main/java/cn/dm/common/FileUtils.java" />
         <option value="$PROJECT_DIR$/dm-common-module/src/main/java/cn/dm/pojo/DmSchedulerSeat.java" />
-        <option value="$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmSchedulerSeatMapper.xml" />
         <option value="$PROJECT_DIR$/dm-common-module/src/main/java/cn/dm/pojo/DmOrderLinkUser.java" />
-        <option value="$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmOrderLinkUserMapper.xml" />
-        <option value="$PROJECT_DIR$/dm-common-ext-utils/src/main/java/cn/dm/common/RabbitMQUtils.java" />
-        <option value="$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmOrderMapper.xml" />
         <option value="$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/mapper/DmOrderMapper.java" />
+        <option value="$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/mapper/DmOrderLinkUserMapper.java" />
+        <option value="$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmSchedulerSeatMapper.xml" />
+        <option value="$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmOrderLinkUserMapper.xml" />
+        <option value="$PROJECT_DIR$/dm-common-module/src/main/java/cn/dm/pojo/DmOrder.java" />
         <option value="$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/client/RestDmOrderClient.java" />
+        <option value="$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/client/RestDmOrderLinkUserClient.java" />
         <option value="$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/fallback/DmOrderClientFallBack.java" />
+        <option value="$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/fallback/DmOrderLinkUserClientFallBack.java" />
+        <option value="$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmOrderMapper.xml" />
         <option value="$PROJECT_DIR$/dm-common-utils/src/main/java/cn/dm/common/Constants.java" />
+        <option value="$PROJECT_DIR$/dm-common-ext-utils/src/main/java/cn/dm/common/RabbitMQUtils.java" />
       </list>
     </option>
   </component>
@@ -125,11 +131,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="dm-common-client" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="dm-common-ext-utils" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="dm-common-client" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="dm-common-ext-utils" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -158,8 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,74 +171,21 @@
               <item name="dm-common" type="b2602c69:ProjectViewProjectNode" />
               <item name="dm-common" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dm-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dm-common" type="462c0819:PsiDirectoryNode" />
-              <item name="dm-common-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dm-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dm-common" type="462c0819:PsiDirectoryNode" />
-              <item name="dm-common-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dm-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dm-common" type="462c0819:PsiDirectoryNode" />
-              <item name="dm-common-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dm-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dm-common" type="462c0819:PsiDirectoryNode" />
-              <item name="dm-common-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dm-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dm-common" type="462c0819:PsiDirectoryNode" />
-              <item name="dm-common-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dm-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dm-common" type="462c0819:PsiDirectoryNode" />
-              <item name="dm-common-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dm" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dm-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dm-common" type="462c0819:PsiDirectoryNode" />
-              <item name="dm-common-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dm" type="462c0819:PsiDirectoryNode" />
-              <item name="fallback" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../dm-sprint1.0/dm-file-consumer" />
-    <property name="SearchEverywhereHistoryKey" value="Cons&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-utils/src/main/java/cn/dm/common/Constants.java&#10;DmOrder.java&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-module/src/main/java/cn/dm/pojo/DmOrder.java&#10;DmOrderMapper.xml&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-dao/src/main/resources/mapper/DmOrderMapper.xml&#10;DmOrder&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-module/src/main/java/cn/dm/pojo/DmOrder.java&#10;DmItemMessageVo&#9;PSI&#9;JAVA://cn.dm.vo.DmItemMessageVo&#10;DmOr&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-module/src/main/java/cn/dm/pojo/DmOrderLinkUser.java&#10;Emp&#9;PSI&#9;JAVA://cn.dm.common.EmptyUtils&#10;Dmschedulerseatmapp&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-dao/src/main/resources/mapper/DmSchedulerSeatMapper.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../user-provider/dm-user-provider" />
+    <property name="SearchEverywhereHistoryKey" value="Cons&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-utils/src/main/java/cn/dm/common/Constants.java&#10;RAB&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-ext-utils/src/main/java/cn/dm/common/RabbitMQUtils.java&#10;DmOrder&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-module/src/main/java/cn/dm/pojo/DmOrder.java&#10;Dm&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-module/src/main/java/cn/dm/pojo/DmOrderLinkUser.java&#10;DmOr&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-module/src/main/java/cn/dm/pojo/DmOrderLinkUser.java&#10;DmOrderli&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-module/src/main/java/cn/dm/pojo/DmOrderLinkUser.java&#10;DmOrder.java&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-module/src/main/java/cn/dm/pojo/DmOrder.java&#10;DmOrderMapper.xml&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-dao/src/main/resources/mapper/DmOrderMapper.xml&#10;DmItemMessageVo&#9;PSI&#9;JAVA://cn.dm.vo.DmItemMessageVo&#10;Emp&#9;PSI&#9;JAVA://cn.dm.common.EmptyUtils&#10;Dmschedulerseatmapp&#9;FILE&#9;file://D:/javawork/dm-v2.0/common/dm-common/dm-common-dao/src/main/resources/mapper/DmSchedulerSeatMapper.xml" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -347,16 +298,16 @@
       <workItem from="1529566119025" duration="2830000" />
       <workItem from="1529628141543" duration="597000" />
       <workItem from="1529631446183" duration="515000" />
-      <workItem from="1529890325270" duration="10274000" />
+      <workItem from="1529890325270" duration="12598000" />
+      <workItem from="1529927955941" duration="15850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20135000" />
+    <option name="totallyTimeSpent" value="38309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -366,15 +317,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33526012" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46164575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23988843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6220363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08507671" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31791908" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19075145" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -409,11 +360,11 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46164575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46582985" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36680615" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08507671" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31791908" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32225433" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -431,11 +382,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dm-common-utils/src/main/java/cn/dm/common/EmptyUtils.java">
+    <entry file="file://$PROJECT_DIR$/dm-common-ext-utils/src/main/java/cn/dm/common/RabbitMQUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dm-common-utils/src/main/java/cn/dm/common/EmptyUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -515,17 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmSchedulerSeatMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164">
-          <caret line="185" column="26" lean-forward="false" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-          <folding>
-            <marker date="1529897868577" expanded="true" signature="4199:4896" ph="insert into dm_scheduler_seat... " />
-            <marker date="1529897868577" expanded="true" signature="7082:7665" ph="SELECT GROUP... dm_cinema_seat" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dm-common-module/src/main/java/cn/dm/pojo/DmSchedulerSeat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -543,7 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -555,100 +501,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/mapper/DmOrderLinkUserMapper.java">
+    <entry file="file://$PROJECT_DIR$/dm-common-dto/src/main/java/cn/dm/vo/DmItemMessageVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="324">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmImageMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3091">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1529576576626" expanded="true" signature="3257:3762" ph="insert into dm_image... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dm-common-module/src/main/java/cn/dm/pojo/DmOrderLinkUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="216">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/client/RestDmLinkUserClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/mapper/DmSchedulerSeatMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmSchedulerSeatMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="163" column="22" lean-forward="false" selection-start-line="163" selection-start-column="22" selection-end-line="163" selection-end-column="22" />
           <folding>
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
+            <marker date="1529991521275" expanded="true" signature="4199:4896" ph="insert into dm_scheduler_seat... " />
+            <marker date="1529991521275" expanded="true" signature="7043:7626" ph="SELECT GROUP... dm_cinema_seat" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/mapper/DmOrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmOrderLinkUserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1284">
-          <caret line="134" column="26" lean-forward="false" selection-start-line="134" selection-start-column="26" selection-end-line="134" selection-end-column="26" />
+        <state relative-caret-position="148">
+          <caret line="155" column="46" lean-forward="false" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="46" />
           <folding>
-            <marker date="1529893877182" expanded="true" signature="3710:4288" ph="insert into dm_order_link_user... " />
+            <marker date="1529993376707" expanded="true" signature="3710:4288" ph="insert into dm_order_link_user... " />
+            <marker date="1529993376707" expanded="true" signature="5492:5547" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dm-common-dto/src/main/java/cn/dm/vo/DmItemMessageVo.java">
+    <entry file="file://$PROJECT_DIR$/dm-common-module/src/main/java/cn/dm/pojo/DmOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="189">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmOrderMapper.xml">
+    <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/mapper/DmOrderLinkUserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="64" column="17" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
-          <folding>
-            <marker date="1529908278448" expanded="true" signature="8683:10159" ph="insert into dm_order... " />
-          </folding>
+        <state relative-caret-position="432">
+          <caret line="20" column="73" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/client/RestDmOrderLinkUserClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/fallback/DmOrderClientFallBack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="20" />
+        <state relative-caret-position="384">
+          <caret line="48" column="18" lean-forward="false" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/fallback/DmOrderLinkUserClientFallBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dm-common-client/src/main/java/cn/dm/client/RestDmOrderClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="40" column="97" lean-forward="false" selection-start-line="40" selection-start-column="97" selection-end-line="40" selection-end-column="97" />
+        <state relative-caret-position="-34">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/resources/mapper/DmOrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="291" column="37" lean-forward="false" selection-start-line="291" selection-start-column="37" selection-end-line="291" selection-end-column="37" />
+          <folding>
+            <marker date="1529997560513" expanded="true" signature="8683:10159" ph="insert into dm_order... " />
+            <marker date="1529997560513" expanded="true" signature="14631:14666" ph="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dm-common-ext-utils/src/main/java/cn/dm/common/RabbitMQUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        <state relative-caret-position="371">
+          <caret line="66" column="73" lean-forward="false" selection-start-line="66" selection-start-column="73" selection-end-line="66" selection-end-column="73" />
           <folding>
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#1560#1561#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dm-common-utils/src/main/java/cn/dm/common/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dm-common-dao/src/main/java/cn/dm/mapper/DmOrderMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="30" column="80" lean-forward="false" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dm-common-module/src/main/java/cn/dm/pojo/DmOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="362">
+          <caret line="77" column="49" lean-forward="false" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="49" />
           <folding />
         </state>
       </provider>

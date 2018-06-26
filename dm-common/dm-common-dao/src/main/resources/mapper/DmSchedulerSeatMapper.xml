@@ -158,10 +158,10 @@
             <if test="scheduleId != null and scheduleId!=''">
                 scheduleId=#{scheduleId},
             </if>
-            <if test="orderNo != null and orderNo!=''">
+            <if test="orderNo!=''">
                 orderNo=#{orderNo},
             </if>
-            <if test="userId != null and userId!=''">
+            <if test="userId!=''">
                 userId=#{userId},
             </if>
             <if test="status != null and status!=''">

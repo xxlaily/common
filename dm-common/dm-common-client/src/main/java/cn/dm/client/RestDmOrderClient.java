@@ -39,5 +39,9 @@ public interface RestDmOrderClient {
 
     @RequestMapping(value = "/getDmOrderByOrderNo", method = RequestMethod.POST)
     public DmOrder getDmOrderByOrderNo(@RequestParam("orderNo") String orderNo) throws Exception;
+
+    @RequestMapping(value = "/deleteDmOrderById", method = RequestMethod.POST)
+    public Integer deleteDmOrderById(@RequestParam("id") Long id) throws Exception;
+
 }
 

@@ -152,4 +152,8 @@
             </if>
         </trim>
     </update>
+
+    <delete id="deleteDmOrderLinkUserByOrderId" parameterType="long">
+        DELETE FROM dm_order_link_user WHERE orderId=#{orderId}
+    </delete>
 </mapper>

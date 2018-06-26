@@ -34,4 +34,9 @@ public class DmOrderLinkUserClientFallBack implements RestDmOrderLinkUserClient 
     public Integer qdtxModifyDmOrderLinkUser(DmOrderLinkUser dmOrderLinkUser)throws Exception{
         return null;
     }
+
+    @Override
+    public Integer deleteDmOrderLinkUserByOrderId(Long orderId) throws Exception {
+        return null;
+    }
 }
