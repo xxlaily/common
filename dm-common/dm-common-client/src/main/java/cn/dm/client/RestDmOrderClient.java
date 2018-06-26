@@ -43,5 +43,11 @@ public interface RestDmOrderClient {
     @RequestMapping(value = "/deleteDmOrderById", method = RequestMethod.POST)
     public Integer deleteDmOrderById(@RequestParam("id") Long id) throws Exception;
 
+    @RequestMapping(value = "/flushCancelOrderType", method = RequestMethod.POST)
+    public boolean flushCancelOrderType() throws Exception;
+
+    @RequestMapping(value = "/getDmOrderByOrderTypeAndTime", method = RequestMethod.POST)
+    public List<DmOrder> getDmOrderByOrderTypeAndTime() throws Exception;
+
 }
 

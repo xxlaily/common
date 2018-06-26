@@ -28,5 +28,7 @@ public interface DmOrderMapper {
 
     public List<DmOrder> getDmOrderListByOrderNoOrDate(Map<String, Object> param);
 
-    public DmOrder getDmOrderByOrderNo(@Param(value = "orderNo") String orderNo);
+    public Integer flushCancelOrderType() throws Exception;
+
+    public List<DmOrder> getDmOrderByOrderTypeAndTime() throws Exception;
 }

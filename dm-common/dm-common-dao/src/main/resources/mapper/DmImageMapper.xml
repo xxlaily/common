@@ -123,7 +123,7 @@
                             type=#{type},
                         </if>
                         <if test="updatedTime != null">
-                            updatedTime=#{updatedTime}
+                            updatedTime=#{updatedTime},
                         </if>
                         <if test="category != null">
                             category=#{category}
