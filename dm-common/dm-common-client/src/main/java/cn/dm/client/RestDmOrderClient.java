@@ -49,5 +49,7 @@ public interface RestDmOrderClient {
     @RequestMapping(value = "/getDmOrderByOrderTypeAndTime", method = RequestMethod.POST)
     public List<DmOrder> getDmOrderByOrderTypeAndTime() throws Exception;
 
+    @RequestMapping(value = "/processed", method = RequestMethod.POST)
+    public boolean processed(@RequestParam("orderNo")  String orderNo, @RequestParam("flag")  Integer flag) throws Exception;
 }
 

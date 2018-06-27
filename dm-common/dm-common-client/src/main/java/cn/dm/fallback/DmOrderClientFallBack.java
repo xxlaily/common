@@ -60,4 +60,9 @@ public class DmOrderClientFallBack implements RestDmOrderClient {
     public List<DmOrder> getDmOrderByOrderTypeAndTime() throws Exception {
         return null;
     }
+
+    @Override
+    public boolean processed(String orderNo, Integer flag) throws Exception {
+        return false;
+    }
 }
