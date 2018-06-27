@@ -18,7 +18,7 @@ public interface DmOrderMapper {
 
     public Integer getDmOrderCountByMap(Map<String, Object> param) throws Exception;
 
-    public Integer insertDmOrder(DmOrder dmOrder) throws Exception;
+    public Long insertDmOrder(DmOrder dmOrder) throws Exception;
 
     public Integer updateDmOrder(DmOrder dmOrder) throws Exception;
 
