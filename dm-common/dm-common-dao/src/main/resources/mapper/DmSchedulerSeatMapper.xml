@@ -11,6 +11,7 @@
         y as y,
         areaLevel as areaLevel,
         scheduleId as scheduleId,
+        orderNo as orderNo,
         userId as userId,
         status as status,
         sort as sort,
@@ -31,6 +32,7 @@
         y as y,
         areaLevel as areaLevel,
         scheduleId as scheduleId,
+        orderNo as orderNo,
         userId as userId,
         status as status,
         sort as sort,
@@ -50,8 +52,14 @@
             <if test="areaLevel != null and areaLevel!=''">
                 and areaLevel=#{areaLevel}
             </if>
+            <if test="orderNo != null and orderNo!=''">
+                and orderNo=#{orderNo}
+            </if>
             <if test="scheduleId != null and scheduleId!=''">
                 and scheduleId=#{scheduleId}
+            </if>
+            <if test="orderNo != null and orderNo!=''">
+                and orderNo=#{orderNo}
             </if>
             <if test="userId != null and userId!=''">
                 and userId=#{userId}
@@ -117,6 +125,7 @@
                         areaLevel,
                         scheduleId,
                         userId,
+                        orderNo,
                         status,
                         sort,
                         createdTime,
@@ -126,6 +135,7 @@
                      #{y},
                      #{areaLevel},
                      #{scheduleId},
+                     #{orderNo},
                      #{userId},
                      #{status},
                      #{sort},
@@ -148,7 +158,10 @@
             <if test="scheduleId != null and scheduleId!=''">
                 scheduleId=#{scheduleId},
             </if>
-            <if test="userId != null and userId!=''">
+            <if test="orderNo!=''">
+                orderNo=#{orderNo},
+            </if>
+            <if test="userId!=''">
                 userId=#{userId},
             </if>
             <if test="status != null and status!=''">
@@ -173,6 +186,7 @@
         y as y,
         areaLevel as areaLevel,
         scheduleId as scheduleId,
+        orderNo as orderNo,
         userId as userId,
         status as status,
         sort as sort,

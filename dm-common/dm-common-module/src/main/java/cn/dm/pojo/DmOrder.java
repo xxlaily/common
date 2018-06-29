@@ -5,6 +5,10 @@ import java.util.Date;
 *   订单表
 */
 public class DmOrder implements Serializable {
+
+    public DmOrder() {
+    }
+
     //主键
     private Long id;
     //订单编号

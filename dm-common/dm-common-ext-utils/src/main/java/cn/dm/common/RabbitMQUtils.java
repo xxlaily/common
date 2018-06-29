@@ -13,28 +13,58 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMQUtils {
     @Bean
-    public Queue toQgQueue(){
+    public Queue toQgQueue() {
         return new Queue(Constants.RabbitQueueName.TO_QG_QUEUE, true);
     }
 
     @Bean
-    public Queue toCreateOrderQueue(){
+    public Queue toCreateOrderQueue() {
         return new Queue(Constants.RabbitQueueName.TO_CREATE_ORDER, true);
     }
 
     @Bean
-    public Queue toUpdateOrderQueue(){
+    public Queue toUpdateOrderQueue() {
         return new Queue(Constants.RabbitQueueName.TO_UPDATED_ORDER_QUEUE, true);
     }
 
     @Bean
-    public Queue toUpdateGoodsQueue(){
+    public Queue toUpdateGoodsQueue() {
         return new Queue(Constants.RabbitQueueName.TO_UPDATED_GOODS_QUQUE, true);
+    }
+
+    /**
+     * 重置座位状态
+     *
+     * @return
+     */
+    @Bean
+    public Queue toResetSeatQueue() {
+        return new Queue(Constants.RabbitQueueName.TO_RESET_SEAT_QUQUE, true);
+    }
+
+    /**
+     * 删除订单
+     *
+     * @return
+     */
+    @Bean
+    public Queue toDelOrderQueue() {
+        return new Queue(Constants.RabbitQueueName.TO_DEL_ORDER_QUQUE, true);
+    }
+
+    /**
+     * 重置联系人
+     *
+     * @return
+     */
+    @Bean
+    public Queue toResetLinkUserQueue() {
+        return new Queue(Constants.RabbitQueueName.TO_RESET_LINKUSER_QUQUE, true);
     }
 
     @Bean
     TopicExchange topicExchange() {
-        return new TopicExchange("topicExchange");
+        return new TopicExchange(Constants.RabbitQueueName.TOPIC_EXCHANGE);
     }
 
     @Bean
@@ -55,5 +85,20 @@ public class RabbitMQUtils {
     @Bean
     public Binding bindingToUpdateGoods() {
         return BindingBuilder.bind(toUpdateGoodsQueue()).to(topicExchange()).with("key.toUpdateGoods");
+    }
+
+    @Bean
+    public Binding bindingToResetSeat() {
+        return BindingBuilder.bind(toResetSeatQueue()).to(topicExchange()).with(Constants.RabbitQueueName.TO_RESET_SEAT_QUQUE);
+    }
+
+    @Bean
+    public Binding bindingToDelOrder() {
+        return BindingBuilder.bind(toDelOrderQueue()).to(topicExchange()).with(Constants.RabbitQueueName.TO_DEL_ORDER_QUQUE);
+    }
+
+    @Bean
+    public Binding bindingToResetLinkUser() {
+        return BindingBuilder.bind(toResetLinkUserQueue()).to(topicExchange()).with(Constants.RabbitQueueName.TO_RESET_LINKUSER_QUQUE);
     }
 }

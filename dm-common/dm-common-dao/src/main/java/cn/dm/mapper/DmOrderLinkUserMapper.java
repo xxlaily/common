@@ -18,7 +18,7 @@ public interface DmOrderLinkUserMapper {
 
 	public Integer updateDmOrderLinkUser(DmOrderLinkUser dmOrderLinkUser)throws Exception;
 
-	public Integer deleteDmOrderLinkUserById(@Param(value = "id") Long id)throws Exception;
+	public Integer deleteDmOrderLinkUserByOrderId(@Param(value = "orderId") Long orderId)throws Exception;
 
 	public Integer batchDeleteDmOrderLinkUser(Map<String,List<String>> params);
 

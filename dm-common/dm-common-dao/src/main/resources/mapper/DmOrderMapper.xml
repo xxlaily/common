@@ -35,6 +35,37 @@
         </trim>
     </select>
 
+    <select id="getDmOrderByOrderNo" resultType="cn.dm.pojo.DmOrder">
+        select
+        id as id,
+        orderNo as orderNo,
+        userId as userId,
+        schedulerId as schedulerId,
+        itemId as itemId,
+        itemName as itemName,
+        wxTradeNo as wxTradeNo,
+        aliTradeNo as aliTradeNo,
+        orderType as orderType,
+        payType as payType,
+        totalCount as totalCount,
+        sourceType as sourceType,
+        isNeedInvoice as isNeedInvoice,
+        invoiceType as invoiceType,
+        invoiceHead as invoiceHead,
+        invoiceNo as invoiceNo,
+        isNeedInsurance as isNeedInsurance,
+        totalAmount as totalAmount,
+        insuranceAmount as insuranceAmount,
+        createdTime as createdTime,
+        updatedTime as updatedTime
+        from dm_order
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="orderNo != null">
+                and orderNo=#{orderNo}
+            </if>
+        </trim>
+    </select>
+
     <select id="getDmOrderListByMap" resultType="cn.dm.pojo.DmOrder" parameterType="java.util.Map">
         select
         id as id,
@@ -198,7 +229,7 @@
         </trim>
     </select>
 
-    <insert id="insertDmOrder" parameterType="cn.dm.pojo.DmOrder">
+    <insert id="insertDmOrder" keyProperty="id" useGeneratedKeys="true"  parameterType="cn.dm.pojo.DmOrder">
         insert into dm_order(
                         orderNo,
                         userId,
@@ -240,7 +271,7 @@
                      #{totalAmount},
                      #{insuranceAmount},
                      #{createdTime},
-                    #{updatedTime})
+                     #{updatedTime})
     </insert>
 
     <update id="updateDmOrder" parameterType="cn.dm.pojo.DmOrder">
@@ -259,7 +290,7 @@
                 itemId=#{itemId},
             </if>
             <if test="itemName != null and itemName!=''">
-                and itemName=#{itemName}
+                itemName=#{itemName},
             </if>
             <if test="wxTradeNo != null and wxTradeNo!=''">
                 wxTradeNo=#{wxTradeNo},
@@ -300,10 +331,10 @@
             <if test="insuranceAmount != null and insuranceAmount!=''">
                 insuranceAmount=#{insuranceAmount},
             </if>
-            <if test="createdTime != null and createdTime!=''">
+            <if test="createdTime != null">
                 createdTime=#{createdTime},
             </if>
-            <if test="updatedTime != null and updatedTime!=''">
+            <if test="updatedTime != null">
                 updatedTime=#{updatedTime}
             </if>
         </trim>
@@ -357,5 +388,41 @@
         <if test="beginPos != null and pageSize != null ">
             limit #{beginPos},#{pageSize}
         </if>
+    </select>
+
+    <!-- 删除订单 -->
+    <delete id="deleteDmOrderById" parameterType="long">
+        DELETE FROM dm_order WHERE id=#{id}
+    </delete>
+
+    <update id="flushCancelOrderType">
+        update dm_order set orderType=-1 where orderType=0 and timestampdiff(SECOND, createdTime, NOW()) >= 2 * 3600
+    </update>
+
+    <select id="getDmOrderByOrderTypeAndTime" resultType="cn.dm.pojo.DmOrder">
+        select
+        id as id,
+        orderNo as orderNo,
+        userId as userId,
+        schedulerId as schedulerId,
+        itemId as itemId,
+        itemName as itemName,
+        wxTradeNo as wxTradeNo,
+        aliTradeNo as aliTradeNo,
+        orderType as orderType,
+        payType as payType,
+        totalCount as totalCount,
+        sourceType as sourceType,
+        isNeedInvoice as isNeedInvoice,
+        invoiceType as invoiceType,
+        invoiceHead as invoiceHead,
+        invoiceNo as invoiceNo,
+        isNeedInsurance as isNeedInsurance,
+        totalAmount as totalAmount,
+        insuranceAmount as insuranceAmount,
+        createdTime as createdTime,
+        updatedTime as updatedTime
+        from dm_order
+        where orderType=-1 and timestampdiff(SECOND, createdTime, NOW()) >= 2 * 3600
     </select>
 </mapper>

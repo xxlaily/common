@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Mapper
 public interface DmOrderMapper {
@@ -17,7 +18,7 @@ public interface DmOrderMapper {
 
     public Integer getDmOrderCountByMap(Map<String, Object> param) throws Exception;
 
-    public Integer insertDmOrder(DmOrder dmOrder) throws Exception;
+    public Long insertDmOrder(DmOrder dmOrder) throws Exception;
 
     public Integer updateDmOrder(DmOrder dmOrder) throws Exception;
 
@@ -27,4 +28,9 @@ public interface DmOrderMapper {
 
     public List<DmOrder> getDmOrderListByOrderNoOrDate(Map<String, Object> param);
 
+    public Integer flushCancelOrderType() throws Exception;
+
+    public List<DmOrder> getDmOrderByOrderTypeAndTime() throws Exception;
+
+    public DmOrder getDmOrderByOrderNo(@Param(value = "orderNo") String orderNo) throws Exception;
 }

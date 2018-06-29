@@ -40,8 +40,8 @@ public class Constants {
 
     public static class OrderStatus {
         public final static Integer TOPAY = 0;//待支付
-        public static final Integer SUCCESS = 1;//支付成功
-        public final static Integer FAIL = 2;//支付失败
+        public static final Integer SUCCESS = 2;//支付成功
+        public final static Integer FAIL = -1;//支付失败
         public final static Integer ISNEEDINSURANCE_NO = 0;//不需要保险
         public final static Integer ISNEEDINSURANCE_YES = 1;//需要保险
         public final static Double NEEDINSURANCE_MONEY = 20.0;//保险金额
@@ -51,6 +51,7 @@ public class Constants {
      * 座位表状态常量
      */
     public static class SchedulerSeatStatus {
+        public final static Integer SchedulerSeat_FREE = 1;//空闲待购买
         public final static Integer SchedulerSeat_TOPAY = 2;//锁定待付款
         public static final Integer SchedulerSeat_PAYSUCCESS = 3;//支付成功
     }
@@ -67,10 +68,14 @@ public class Constants {
     public static class RabbitQueueName {
         public final static String TO_QG_QUEUE = "toQgQueue";
         public final static String TO_CREATE_ORDER = "toCreateOrder";
-
         public final static String TO_UPDATED_ORDER_QUEUE = "toUpdateOrderQueue";
-
         public final static String TO_UPDATED_GOODS_QUQUE = "toUpdateGoodsQueue";
+
+        public final static String TO_RESET_SEAT_QUQUE = "toResetSeatQueue";//重置座位队列
+        public final static String TO_DEL_ORDER_QUQUE = "toDelOrderQueue";//删除订单队列
+        public final static String TO_RESET_LINKUSER_QUQUE = "toResetLinkUserQueue";//重置联系人队列
+
+        public final static String TOPIC_EXCHANGE = "topicExchange";
     }
 
     public static class QgStatus {
@@ -95,6 +100,7 @@ public class Constants {
     }
 
     public static final String USER_TOKEN_PREFIX = "userToken:";
+    public static final String IMAGE_TOKEN_PREFIX = "imageToken:";
 
     //文件服务器前缀
     public static final String FILE_PRE = "http://192.168.9.151:8888/";
@@ -111,4 +117,8 @@ public class Constants {
 
     public static final Integer DEFAULT_PAGE_SIZE = 10;
 
+    public static class PayMethod {
+        public final static int WINXI = 2;
+        public final static int ZHIFUBAO = 1;
+    }
 }

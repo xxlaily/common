@@ -29,12 +29,27 @@ public interface RestDmOrderClient {
     public Integer getDmOrderCountByMap(@RequestBody Map<String, Object> param) throws Exception;
 
     @RequestMapping(value = "/qdtxAddDmOrder", method = RequestMethod.POST)
-    public Integer qdtxAddDmOrder(@RequestBody DmOrder dmOrder) throws Exception;
+    public Long qdtxAddDmOrder(@RequestBody DmOrder dmOrder) throws Exception;
 
     @RequestMapping(value = "/qdtxModifyDmOrder", method = RequestMethod.POST)
     public Integer qdtxModifyDmOrder(@RequestBody DmOrder dmOrder) throws Exception;
 
     @RequestMapping(value = "/getDmOrderListByOrderNoOrDate", method = RequestMethod.POST)
     public List<DmOrder> getDmOrderListByOrderNoOrDate(@RequestBody Map<String, Object> param) throws Exception;
+
+    @RequestMapping(value = "/getDmOrderByOrderNo", method = RequestMethod.POST)
+    public DmOrder getDmOrderByOrderNo(@RequestParam("orderNo") String orderNo) throws Exception;
+
+    @RequestMapping(value = "/deleteDmOrderById", method = RequestMethod.POST)
+    public Integer deleteDmOrderById(@RequestParam("id") Long id) throws Exception;
+
+    @RequestMapping(value = "/flushCancelOrderType", method = RequestMethod.POST)
+    public boolean flushCancelOrderType() throws Exception;
+
+    @RequestMapping(value = "/getDmOrderByOrderTypeAndTime", method = RequestMethod.POST)
+    public List<DmOrder> getDmOrderByOrderTypeAndTime() throws Exception;
+
+    @RequestMapping(value = "/processed", method = RequestMethod.POST)
+    public boolean processed(@RequestParam("orderNo")  String orderNo, @RequestParam("flag")  Integer flag) throws Exception;
 }
 

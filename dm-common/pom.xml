@@ -47,5 +47,6 @@
     <module>dm-common-module</module>
     <module>dm-common-utils</module>
     <module>dm-common-client</module>
+    <module>dm-common-ext-utils</module>
   </modules>
 </project>
