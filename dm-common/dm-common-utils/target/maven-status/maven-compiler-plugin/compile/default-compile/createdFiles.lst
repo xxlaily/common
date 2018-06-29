@@ -29,4 +29,5 @@ cn\dm\common\Constants.class
 cn\dm\common\UrlUtils.class
 cn\dm\common\BigDecimalUtil$1.class
 cn\dm\common\Constants$QgStatus.class
+cn\dm\common\Constants$SchedulerSeatStatus.class
 cn\dm\common\Constants$QueueName.class

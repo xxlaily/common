@@ -22,4 +22,5 @@ public interface DmCinemaSeatMapper {
 
 	public Integer batchDeleteDmCinemaSeat(Map<String,List<String>> params);
 
+	public List<String> queryCinemaSeatArray(Map<String, Object> params) throws Exception;
 }
