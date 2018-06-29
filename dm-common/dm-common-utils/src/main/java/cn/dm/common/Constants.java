@@ -118,7 +118,7 @@ public class Constants {
     public static final Integer DEFAULT_PAGE_SIZE = 10;
 
     public static class PayMethod {
-        public final static int weixin = 2;
-        public final static int zhifubao = 1;
+        public final static int WINXI = 2;
+        public final static int ZHIFUBAO = 1;
     }
 }
