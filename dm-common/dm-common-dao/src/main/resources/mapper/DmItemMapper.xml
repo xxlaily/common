@@ -270,7 +270,7 @@
             endTime as endTime,
             minPrice as minPrice
         from dm_item
-        WHERE MONTH(startTime) = #{month} AND YEAR(startTime) = #{year} AND itemType1Id=#{itemType1Id}
+        WHERE MONTH(startTime) = #{month} AND YEAR(startTime) = #{year} AND itemType1Id=#{itemType1Id} ORDER BY startTime DESC limit 3
     </select>
 
     <select id="getDmItemCountByMap" resultType="Integer" parameterType="java.util.Map">
