@@ -39,6 +39,16 @@ public class DmUserVO implements Serializable {
     private Long imageId;
     // 图片URL
     private String imgUrl;
+    //微信用户头像
+    private String headimgUrl;
+
+    public String getHeadimgUrl() {
+        return headimgUrl;
+    }
+
+    public void setHeadimgUrl(String headimgUrl) {
+        this.headimgUrl = headimgUrl;
+    }
 
     public void setUserId (Long  userId){
         this.userId=userId;
