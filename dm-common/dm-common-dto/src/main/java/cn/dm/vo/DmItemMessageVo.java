@@ -17,6 +17,8 @@ public class DmItemMessageVo implements Serializable{
     private String tradeNo;
     //订单号
     private String orderNo;
+    //支付方式
+    private Integer payMethod;
 
     public String getItemId() {
         return itemId;
@@ -64,5 +66,13 @@ public class DmItemMessageVo implements Serializable{
 
     public void setOrderNo(String orderNo) {
         this.orderNo = orderNo;
+    }
+
+    public Integer getPayMethod() {
+        return payMethod;
+    }
+
+    public void setPayMethod(Integer payMethod) {
+        this.payMethod = payMethod;
     }
 }
