@@ -34,4 +34,9 @@ public class DmCinemaSeatClientFallBack implements RestDmCinemaSeatClient {
     public Integer qdtxModifyDmCinemaSeat(DmCinemaSeat dmCinemaSeat)throws Exception{
         return null;
     }
+
+    @Override
+    public List<String> queryCinemaSeatArray(Map<String, Object> params) throws Exception {
+        return null;
+    }
 }

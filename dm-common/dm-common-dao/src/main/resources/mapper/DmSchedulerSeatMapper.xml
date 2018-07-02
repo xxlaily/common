@@ -206,29 +206,4 @@
         </trim>
     </select>
 
-    <select id="queryCinemaSeatArray"  parameterType="java.util.Map" resultType="String">
-        SELECT
-            GROUP_CONCAT(
-                CASE
-                WHEN dss.areaLevel = 0 THEN
-                    '_'
-                WHEN dss.areaLevel = 1 THEN
-                    'a'
-                WHEN dss.areaLevel = 2 THEN
-                    'b'
-                WHEN dss.areaLevel = 3 THEN
-                    'c'
-                END separator '') as seatArray
-		FROM
-			dm_cinema_seat dcs,
-			dm_scheduler_seat dss
-		WHERE
-			dcs.cinemaId = #{cinemaId}
-		AND dss.scheduleId = #{scheduleId}
-		AND dcs.x = dss.x
-		AND dcs.y = dss.y
-		GROUP BY
-			dcs.x
-		ORDER BY dcs.x ASC
-    </select>
 </mapper>

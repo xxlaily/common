@@ -39,8 +39,5 @@ public interface RestDmSchedulerSeatClient {
                                                      @RequestParam(value = "x") Integer x,
                                                      @RequestParam(value = "y") Integer y) throws Exception;
 
-    @RequestMapping(value = "/queryCinemaSeatArray", method = RequestMethod.POST)
-    public List<String> queryCinemaSeatArray(@RequestBody Map<String, Object> params) throws Exception;
-
 }
 

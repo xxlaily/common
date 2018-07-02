@@ -39,10 +39,4 @@ public class DmSchedulerSeatClientFallBack implements RestDmSchedulerSeatClient 
     public DmSchedulerSeat getDmSchedulerSeatByOrder(Long scheduleId, Integer x, Integer y) throws Exception {
         return null;
     }
-
-    @Override
-    public List<String> queryCinemaSeatArray(Map<String, Object> params) throws Exception {
-        return null;
-    }
-
 }

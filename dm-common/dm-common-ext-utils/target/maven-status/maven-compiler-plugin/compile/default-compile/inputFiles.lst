@@ -1,4 +1,4 @@
-D:\javawork\dm-v2.0\common\dm-common\dm-common-ext-utils\src\main\java\cn\dm\config\RedisConfig.java
-D:\javawork\dm-v2.0\common\dm-common\dm-common-ext-utils\src\main\java\cn\dm\common\RedisUtils.java
-D:\javawork\dm-v2.0\common\dm-common\dm-common-ext-utils\src\main\java\cn\dm\common\MqUtils.java
-D:\javawork\dm-v2.0\common\dm-common\dm-common-ext-utils\src\main\java\cn\dm\common\RabbitMQUtils.java
+D:\workspace\dm-sprint2.0\common\dm-common\dm-common-ext-utils\src\main\java\cn\dm\common\RedisUtils.java
+D:\workspace\dm-sprint2.0\common\dm-common\dm-common-ext-utils\src\main\java\cn\dm\common\MqUtils.java
+D:\workspace\dm-sprint2.0\common\dm-common\dm-common-ext-utils\src\main\java\cn\dm\config\RedisConfig.java
+D:\workspace\dm-sprint2.0\common\dm-common\dm-common-ext-utils\src\main\java\cn\dm\common\RabbitMQUtils.java
