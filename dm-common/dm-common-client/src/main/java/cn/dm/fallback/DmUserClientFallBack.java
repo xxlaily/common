@@ -31,7 +31,7 @@ public class DmUserClientFallBack implements RestDmUserClient {
     }
 
     @Override
-    public Integer createDmUser(String wxUserId, String id) throws Exception {
+    public Integer createDmUser(DmUser dmUser) throws Exception {
         return null;
     }
 
