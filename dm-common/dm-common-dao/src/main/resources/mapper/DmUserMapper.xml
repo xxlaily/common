@@ -150,7 +150,7 @@
         where phone=#{phone} and password=#{password}
     </select>
 
-    <insert id="insertDmUser" parameterType="cn.dm.pojo.DmUser">
+    <insert id="insertDmUser" useGeneratedKeys="true" keyProperty="id" parameterType="cn.dm.pojo.DmUser">
         insert into dm_user(
                         phone,
                         password,
