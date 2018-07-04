@@ -99,6 +99,10 @@ public class Constants {
         public final static Integer cancel = 2;//支付超时
     }
 
+    public static class TOPIC{
+        public final static String DEFAULT = "dmservice";
+    }
+
     public static final String USER_TOKEN_PREFIX = "userToken:";
     public static final String IMAGE_TOKEN_PREFIX = "imageCache:";
 
