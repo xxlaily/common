@@ -99,8 +99,21 @@ public class Constants {
         public final static Integer cancel = 2;//支付超时
     }
 
-    public static class TOPIC{
-        public final static String DEFAULT = "dmservice";
+    public static class TOPIC {
+        public final static String ORDER_CONSUMER = "order_consumer";
+        public final static String ORDER_PROVIDER = "order_provider";
+        public final static String ITEM_CONSUMER = "item_consumer";
+        public final static String ITEM_PROVIDER = "item_provider";
+        public final static String BASE_CONSUMER = "base_consumer";
+        public final static String BASE_PROVIDER = "base_provider";
+        public final static String PAY_CONSUMER = "pay_consumer";
+        public final static String PAY_PROVIDER = "pay_provider";
+        public final static String SCHEDULER_CONSUMER = "scheduler_consumer";
+        public final static String SCHEDULER_PROVIDER = "scheduler_provider";
+        public final static String USER_CONSUMER = "user_consumer";
+        public final static String USER_PROVIDER = "user_provider";
+        public final static String GATEWAY_ZUUL = "gateway_zuul";
+        public final static String ITEM_SEARCH = "item_search";
     }
 
     public static final String USER_TOKEN_PREFIX = "userToken:";
