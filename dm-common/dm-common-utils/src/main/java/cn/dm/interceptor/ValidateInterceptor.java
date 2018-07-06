@@ -19,6 +19,15 @@ public class ValidateInterceptor implements HandlerInterceptor {
 
     private static Logger logger = Logger.getLogger(ValidateInterceptor.class);
 
+    private String moduleName;
+
+    private LogUtils logUtils;
+
+    public ValidateInterceptor(String moduleName,LogUtils logUtils){
+        this.moduleName=moduleName;
+        this.logUtils=logUtils;
+    }
+
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         return true;
@@ -48,6 +57,8 @@ public class ValidateInterceptor implements HandlerInterceptor {
             response.setCharacterEncoding("UTF-8");
             response.setContentType("text/html; charset=utf-8");
             try {
+                String moduleMessage=ex.toString();
+                logUtils.i(moduleName,moduleMessage);
                 if (ex instanceof BaseException) {
                     BaseException se = (BaseException) ex;
                     dto= DtoUtil.returnFail(se.getErrorMessage(),se.getErrorCode());
