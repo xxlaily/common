@@ -59,6 +59,7 @@ public class ValidateInterceptor implements HandlerInterceptor {
             try {
                 String moduleMessage=ex.toString();
                 logUtils.i(moduleName,moduleMessage);
+                logUtils.i(moduleName,moduleName);
                 if (ex instanceof BaseException) {
                     BaseException se = (BaseException) ex;
                     dto= DtoUtil.returnFail(se.getErrorMessage(),se.getErrorCode());
