@@ -17,7 +17,7 @@ public class DmItemMessageVo implements Serializable{
     private String tradeNo;
     //订单号
     private String orderNo;
-    //支付方式
+    //支付方式（1：微信，2：支付宝）
     private Integer payMethod;
 
     public String getItemId() {
