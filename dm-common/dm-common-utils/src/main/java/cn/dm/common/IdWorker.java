@@ -76,15 +76,10 @@ public class IdWorker {
         return System.currentTimeMillis();
     }
 
-    public static void main(String[] args) throws Exception {
-       String id=getId();
-        System.out.println(id);
-    }
-
-    public static String getId(){
-        String id=null;
+    public static Long getId(){
+        Long id=null;
         try {
-            id=IdWorker.getFlowIdWorkerInstance().nextId()+"";
+            id=IdWorker.getFlowIdWorkerInstance().nextId();
         } catch (Exception e) {
             e.printStackTrace();
         }
