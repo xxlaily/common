@@ -64,7 +64,7 @@ public class RabbitMQUtils {
 
     @Bean
     TopicExchange topicExchange() {
-        return new TopicExchange(Constants.RabbitQueueName.TOPIC_EXCHANGE);
+        return new TopicExchange(Constants.RabbitQueueName.TOPIC_EXCHANGE, true, true);
     }
 
     @Bean
