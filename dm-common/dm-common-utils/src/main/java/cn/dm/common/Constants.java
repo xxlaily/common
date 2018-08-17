@@ -138,4 +138,8 @@ public class Constants {
         public final static int WEIXIN = 1;
         public final static int ZHIFUBAO = 2;
     }
+
+    public static final String DEAD_LETTER_EXCHANGE = "deadLetterExchange";//死信关联的Exchange的名称
+    public static final String DEAD_LETTER_ROUTINKEY = "deadRoutingKey";//与上述Exchange绑定时需要的routingkey
+    public static final String DEAD_QUEUE = "dead.queue";//与上述Exchange绑定时需要的routingkey
 }

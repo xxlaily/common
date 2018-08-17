@@ -7,29 +7,56 @@ import org.springframework.amqp.core.TopicExchange;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.annotation.PostConstruct;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by Administrator on 2018-5-13.
  */
 @Configuration
 public class RabbitMQUtils {
+
+    private Map<String, Object> args = new HashMap<>();
+
+    @PostConstruct
+    public void init(){
+        // 设置该Queue的死信的信箱
+        args.put("x-dead-letter-exchange", Constants.DEAD_LETTER_EXCHANGE);
+        // 设置死信routingKey
+        args.put("x-dead-letter-routing-key", Constants.DEAD_LETTER_ROUTINKEY);
+    }
+
+    //声明一个死信交换机
+    @Bean
+    public TopicExchange deadLetterExchange() {
+        return new TopicExchange(Constants.DEAD_LETTER_EXCHANGE, true, true);
+    }
+
+    //声明一个死信队列用来存放死信消息
+    @Bean
+    public Queue deadQueue() {
+        return new Queue(Constants.DEAD_QUEUE, true, false, true, null);
+    }
+
     @Bean
     public Queue toQgQueue() {
-        return new Queue(Constants.RabbitQueueName.TO_QG_QUEUE, true);
+        return new Queue(Constants.RabbitQueueName.TO_QG_QUEUE, true, false, true, args);
     }
 
     @Bean
     public Queue toCreateOrderQueue() {
-        return new Queue(Constants.RabbitQueueName.TO_CREATE_ORDER, true);
+        return new Queue(Constants.RabbitQueueName.TO_CREATE_ORDER, true, false, true, args);
     }
 
     @Bean
     public Queue toUpdateOrderQueue() {
-        return new Queue(Constants.RabbitQueueName.TO_UPDATED_ORDER_QUEUE, true);
+        return new Queue(Constants.RabbitQueueName.TO_UPDATED_ORDER_QUEUE, true, false, true, args);
     }
 
     @Bean
     public Queue toUpdateGoodsQueue() {
-        return new Queue(Constants.RabbitQueueName.TO_UPDATED_GOODS_QUQUE, true);
+        return new Queue(Constants.RabbitQueueName.TO_UPDATED_GOODS_QUQUE, true, false, true, args);
     }
 
     /**
@@ -39,7 +66,7 @@ public class RabbitMQUtils {
      */
     @Bean
     public Queue toResetSeatQueue() {
-        return new Queue(Constants.RabbitQueueName.TO_RESET_SEAT_QUQUE, true);
+        return new Queue(Constants.RabbitQueueName.TO_RESET_SEAT_QUQUE, true, false, true, args);
     }
 
     /**
@@ -49,7 +76,7 @@ public class RabbitMQUtils {
      */
     @Bean
     public Queue toDelOrderQueue() {
-        return new Queue(Constants.RabbitQueueName.TO_DEL_ORDER_QUQUE, true);
+        return new Queue(Constants.RabbitQueueName.TO_DEL_ORDER_QUQUE, true, false, true, args);
     }
 
     /**
@@ -59,7 +86,7 @@ public class RabbitMQUtils {
      */
     @Bean
     public Queue toResetLinkUserQueue() {
-        return new Queue(Constants.RabbitQueueName.TO_RESET_LINKUSER_QUQUE, true);
+        return new Queue(Constants.RabbitQueueName.TO_RESET_LINKUSER_QUQUE, true, false, true, args);
     }
 
     @Bean
