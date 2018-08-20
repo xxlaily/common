@@ -39,6 +39,14 @@ public class RabbitMQUtils {
         return new Queue(Constants.DEAD_QUEUE, true, false, true, null);
     }
 
+    // 将死信队列和死信的交换机绑定
+    @Bean
+    public Binding bindingDead() {
+        return BindingBuilder.bind(deadQueue()).
+                to(deadLetterExchange()).
+                with(Constants.DEAD_LETTER_ROUTINKEY);
+    }
+
     @Bean
     public Queue toQgQueue() {
         return new Queue(Constants.RabbitQueueName.TO_QG_QUEUE, true, false, true, args);
@@ -66,6 +74,9 @@ public class RabbitMQUtils {
      */
     @Bean
     public Queue toResetSeatQueue() {
+        args.put("x-dead-letter-exchange", Constants.DEAD_LETTER_EXCHANGE);
+        // 设置死信routingKey
+        args.put("x-dead-letter-routing-key", Constants.DEAD_LETTER_ROUTINKEY);
         return new Queue(Constants.RabbitQueueName.TO_RESET_SEAT_QUQUE, true, false, true, args);
     }
 
@@ -91,7 +102,7 @@ public class RabbitMQUtils {
 
     @Bean
     TopicExchange topicExchange() {
-        return new TopicExchange(Constants.RabbitQueueName.TOPIC_EXCHANGE, true, false);
+        return new TopicExchange(Constants.RabbitQueueName.TOPIC_EXCHANGE, true, true);
     }
 
     @Bean
