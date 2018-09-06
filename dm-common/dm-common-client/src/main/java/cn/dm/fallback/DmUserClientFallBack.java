@@ -31,7 +31,7 @@ public class DmUserClientFallBack implements RestDmUserClient {
     }
 
     @Override
-    public Integer createDmUser(DmUser dmUser) throws Exception {
+    public Long createDmUser(DmUser dmUser) throws Exception {
         return null;
     }
 

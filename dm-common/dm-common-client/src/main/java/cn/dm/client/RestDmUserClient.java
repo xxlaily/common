@@ -41,7 +41,7 @@ public interface RestDmUserClient {
     public DmUser findByWxUserId(@RequestParam("wxUserId") String wxUserId) throws Exception;
 
     @RequestMapping(value = "/createuser", method = RequestMethod.POST)
-    public Integer createDmUser(@RequestBody DmUser dmUser) throws Exception;
+    public Long createDmUser(@RequestBody DmUser dmUser) throws Exception;
 
     @RequestMapping(value = "/generateToken", method = RequestMethod.POST)
     public String generateToken(@RequestBody DmUser dmUser) throws Exception;
