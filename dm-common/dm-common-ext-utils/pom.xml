@@ -105,5 +105,10 @@
             <artifactId>jedis</artifactId>
             <version>2.9.0</version>
         </dependency>
+        <dependency>
+            <groupId>cn.itrip.alipay</groupId>
+            <artifactId>itrip-alipay-pc</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 </project>
