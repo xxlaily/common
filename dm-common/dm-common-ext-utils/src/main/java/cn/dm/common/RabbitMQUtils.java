@@ -30,13 +30,20 @@ public class RabbitMQUtils {
     //声明一个死信交换机
     @Bean
     public TopicExchange deadLetterExchange() {
-        return new TopicExchange(Constants.DEAD_LETTER_EXCHANGE, true, true);
+        return new TopicExchange(
+                Constants.DEAD_LETTER_EXCHANGE,
+                true,
+                true);
     }
 
     //声明一个死信队列用来存放死信消息
     @Bean
     public Queue deadQueue() {
-        return new Queue(Constants.DEAD_QUEUE, true, false, true, null);
+        return new Queue(Constants.DEAD_QUEUE,
+                true,
+                false,
+                true,
+                null);
     }
 
     // 将死信队列和死信的交换机绑定
@@ -49,7 +56,16 @@ public class RabbitMQUtils {
 
     @Bean
     public Queue toQgQueue() {
-        return new Queue(Constants.RabbitQueueName.TO_QG_QUEUE, true, false, true, args);
+        Map<String, Object> args = new HashMap<>();
+        // 设置该Queue的死信的信箱
+        args.put("dead-letter-exchange", Constants.DEAD_LETTER_EXCHANGE);
+        // 设置死信routingKey
+        args.put("dead-letter-routing-key", Constants.DEAD_LETTER_ROUTINKEY);
+        return new Queue(
+                Constants.RabbitQueueName.TO_QG_QUEUE,
+                true,
+                false,
+                true, args);
     }
 
     @Bean
@@ -102,7 +118,10 @@ public class RabbitMQUtils {
 
     @Bean
     TopicExchange topicExchange() {
-        return new TopicExchange(Constants.RabbitQueueName.TOPIC_EXCHANGE, true, true);
+        return new TopicExchange(
+                Constants.RabbitQueueName.TOPIC_EXCHANGE,
+                true,
+                true);
     }
 
     @Bean
