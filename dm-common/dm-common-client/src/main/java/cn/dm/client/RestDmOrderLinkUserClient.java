@@ -29,10 +29,10 @@ public interface RestDmOrderLinkUserClient {
     public Integer getDmOrderLinkUserCountByMap(@RequestBody Map<String, Object> param) throws Exception;
 
     @RequestMapping(value = "/qdtxAddDmOrderLinkUser", method = RequestMethod.POST)
-    public Integer qdtxAddDmOrderLinkUser(@RequestBody DmOrderLinkUser dmOrderLinkUser) throws Exception;
+    public Long qdtxAddDmOrderLinkUser(@RequestBody DmOrderLinkUser dmOrderLinkUser) throws Exception;
 
     @RequestMapping(value = "/qdtxModifyDmOrderLinkUser", method = RequestMethod.POST)
-    public Integer qdtxModifyDmOrderLinkUser(@RequestBody DmOrderLinkUser dmOrderLinkUser) throws Exception;
+    public Long qdtxModifyDmOrderLinkUser(@RequestBody DmOrderLinkUser dmOrderLinkUser) throws Exception;
 
     @RequestMapping(value = "/deleteDmOrderLinkUserByOrderId", method = RequestMethod.POST)
     public Integer deleteDmOrderLinkUserByOrderId(@RequestParam("orderId") Long orderId) throws Exception;

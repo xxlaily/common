@@ -26,12 +26,12 @@ public class DmOrderLinkUserClientFallBack implements RestDmOrderLinkUserClient 
     }
 
     @Override
-    public Integer qdtxAddDmOrderLinkUser(DmOrderLinkUser dmOrderLinkUser)throws Exception{
+    public Long qdtxAddDmOrderLinkUser(DmOrderLinkUser dmOrderLinkUser)throws Exception{
         return null;
     }
 
     @Override
-    public Integer qdtxModifyDmOrderLinkUser(DmOrderLinkUser dmOrderLinkUser)throws Exception{
+    public Long qdtxModifyDmOrderLinkUser(DmOrderLinkUser dmOrderLinkUser)throws Exception{
         return null;
     }
 
